@@ -2,6 +2,7 @@ package Capstone.BackEnd.Personaggi;
 
 import Capstone.BackEnd.Mosse.Mosse;
 import jakarta.persistence.*;
+import org.hibernate.mapping.Set;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,9 @@ public class Personaggi {
     private int velocità;
     private int vigore;
     private int ripresa;
-
+    @ManyToMany
+    @JoinTable(name = "personaggi_mosse", joinColumns = @JoinColumn(name = "personaggi_id"), inverseJoinColumns = @JoinColumn(name = "mosse_id"))
+    private List<Mosse> poolMosse = new ArrayList<>();
     public long getId() {
         return id;
     }

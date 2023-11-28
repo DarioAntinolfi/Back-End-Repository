@@ -17,6 +17,10 @@ public class Mosse {
     private  int numeroDadi;
     private TipoMosse tipoMosse;
     private int costo;
+    @ManyToMany
+    @JoinTable(name = "personaggi_mosse", joinColumns = @JoinColumn(name = "mosse_id"), inverseJoinColumns = @JoinColumn(name = "personaggi_id"))
+    private List<Personaggi> conosciutaDa = new ArrayList<>();
+
     public long getId() {
         return id;
     }
