@@ -1,5 +1,6 @@
 package Capstone.BackEnd;
 
+import Capstone.BackEnd.Giocatori.GiocatoriService;
 import Capstone.BackEnd.Mosse.MosseService;
 import Capstone.BackEnd.Personaggi.PersonaggiService;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +15,8 @@ public class GameRunner implements CommandLineRunner {
     PersonaggiService personaggiService;
     @Autowired
     MosseService mosseService;
+    @Autowired
+    GiocatoriService giocatoriService;
     @Override
     public void run(String... args) throws Exception {
     }
