@@ -141,8 +141,21 @@ public class Personaggi {
         this.ripresa = ripresa;
     }
 
-    public Personaggi(String nome) {
-        this.nome = nome;
+    @Override
+    public String toString() {
+        return "Personaggi{" +
+                "nome='" + nome + '\'' +
+                ", vita=" + vita +
+                ", forza=" + forza +
+                ", precisione=" + precisione +
+                ", arcano=" + arcano +
+                ", resistenza=" + resistenza +
+                ", destrezza=" + destrezza +
+                ", egida=" + egida +
+                ", velocità=" + velocità +
+                ", vigore=" + vigore +
+                ", ripresa=" + ripresa +
+                ", poolMosse=" + poolMosse +
+                '}';
     }
-
 }
