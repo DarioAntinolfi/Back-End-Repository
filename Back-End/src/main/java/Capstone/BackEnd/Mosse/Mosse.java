@@ -1,5 +1,6 @@
 package Capstone.BackEnd.Mosse;
 
+import Capstone.BackEnd.Giocatori.Giocatori;
 import Capstone.BackEnd.Personaggi.Personaggi;
 import jakarta.persistence.*;
 
@@ -16,7 +17,6 @@ public class Mosse {
     private  int numeroDadi;
     private TipoMosse tipoMosse;
     private int costo;
-
     public long getId() {
         return id;
     }
@@ -59,6 +59,9 @@ public class Mosse {
 
     public void setCosto(int costo) {
         this.costo = costo;
+    }
+
+    public Mosse() {
     }
 
     public Mosse(String nome, int valoreDadi, int numeroDadi, TipoMosse tipoMosse, int costo) {

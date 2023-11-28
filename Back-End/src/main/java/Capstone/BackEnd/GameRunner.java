@@ -1,7 +1,10 @@
 package Capstone.BackEnd;
 
 import Capstone.BackEnd.Giocatori.GiocatoriService;
+import Capstone.BackEnd.Mosse.Mosse;
 import Capstone.BackEnd.Mosse.MosseService;
+import Capstone.BackEnd.Mosse.TipoMosse;
+import Capstone.BackEnd.Personaggi.Personaggi;
 import Capstone.BackEnd.Personaggi.PersonaggiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
