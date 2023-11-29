@@ -127,6 +127,17 @@ public class Personaggi {
         this.ripresa = ripresa;
     }
 
+    public List<Mosse> getPoolMosse() {
+        return poolMosse;
+    }
+
+    public void setPoolMosse(List<Mosse> poolMosse) {
+        this.poolMosse = poolMosse;
+    }
+
+    public Personaggi() {
+    }
+
     public Personaggi(String nome, int vita, int forza, int precisione, int arcano, int resistenza, int destrezza, int egida, int velocità, int vigore, int ripresa) {
         this.nome = nome;
         this.vita = vita;
@@ -144,7 +155,9 @@ public class Personaggi {
     @Override
     public String toString() {
         return "Personaggi{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", immagine='" + immagine + '\'' +
                 ", vita=" + vita +
                 ", forza=" + forza +
                 ", precisione=" + precisione +
@@ -155,7 +168,6 @@ public class Personaggi {
                 ", velocità=" + velocità +
                 ", vigore=" + vigore +
                 ", ripresa=" + ripresa +
-                ", poolMosse=" + poolMosse +
                 '}';
     }
 }

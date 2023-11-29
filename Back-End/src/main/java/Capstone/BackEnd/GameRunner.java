@@ -3,7 +3,6 @@ package Capstone.BackEnd;
 import Capstone.BackEnd.Giocatori.GiocatoriService;
 import Capstone.BackEnd.Mosse.Mosse;
 import Capstone.BackEnd.Mosse.MosseService;
-import Capstone.BackEnd.Mosse.TipoMosse;
 import Capstone.BackEnd.Personaggi.Personaggi;
 import Capstone.BackEnd.Personaggi.PersonaggiService;
 import lombok.extern.slf4j.Slf4j;
@@ -11,18 +10,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@Component
 @Slf4j
+@Component
 public class GameRunner implements CommandLineRunner {
     @Autowired
-    PersonaggiService personaggiService;
+    public PersonaggiService personaggiService;
     @Autowired
-    MosseService mosseService;
+    public MosseService mosseService;
     @Autowired
-    GiocatoriService giocatoriService;
+    public GiocatoriService giocatoriService;
     @Override
     public void run(String... args) throws Exception {
+      
     }
 }
