@@ -24,6 +24,6 @@ public class GameRunner implements CommandLineRunner {
     public GiocatoriService giocatoriService;
     @Override
     public void run(String... args) throws Exception {
-      
+
     }
 }
