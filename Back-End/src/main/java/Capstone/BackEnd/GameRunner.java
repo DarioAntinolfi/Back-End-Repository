@@ -1,5 +1,6 @@
 package Capstone.BackEnd;
 
+import Capstone.BackEnd.Giocatori.Giocatori;
 import Capstone.BackEnd.Giocatori.GiocatoriService;
 import Capstone.BackEnd.Mosse.Mosse;
 import Capstone.BackEnd.Mosse.MosseService;
@@ -24,7 +25,8 @@ public class GameRunner implements CommandLineRunner {
     public GiocatoriService giocatoriService;
     @Override
     public void run(String... args) throws Exception {
-        Personaggi test = personaggiService.findById(3);
-        log.info(test.toString());
+        Personaggi trovato = personaggiService.findById(1);
+        log.info(trovato.toString());
+        //trovato.setImmagine();
     }
 }

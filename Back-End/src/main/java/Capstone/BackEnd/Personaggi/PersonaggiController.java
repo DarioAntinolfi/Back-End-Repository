@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/personaggi")
+@CrossOrigin(maxAge = 3600)
 public class PersonaggiController {
     @Autowired
     private PersonaggiService personaggiService;
