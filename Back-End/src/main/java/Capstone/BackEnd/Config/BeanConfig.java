@@ -1,4 +1,5 @@
-/*package Capstone.BackEnd.Config;
+/*
+package Capstone.BackEnd.Config;
 
 import com.cloudinary.Cloudinary;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,5 +23,4 @@ public class BeanConfig {
     }
 }
 
-
- */
+*/
