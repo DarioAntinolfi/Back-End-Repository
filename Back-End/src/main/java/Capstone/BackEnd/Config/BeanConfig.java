@@ -1,4 +1,4 @@
-/*
+
 package Capstone.BackEnd.Config;
 
 import com.cloudinary.Cloudinary;
@@ -23,4 +23,3 @@ public class BeanConfig {
     }
 }
 
-*/
