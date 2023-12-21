@@ -3,6 +3,7 @@ package Capstone.BackEnd.Personaggi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -38,4 +39,6 @@ public class PersonaggiController {
     public void findByIdAndDelete(@PathVariable long id){
         personaggiService.findByIdAndDelate(id);
     }
+
+
 }
