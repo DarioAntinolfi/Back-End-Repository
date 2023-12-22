@@ -5,4 +5,7 @@ pgni package ha:
 -una classe service
 -una calsse repository
 
-Il package personaggi ha anche una clase controller per poter passare i datial front-end
+Il package personaggi ha anche una clase controller per poter passare i dati al front-end
+
+front-end
+https://github.com/DarioAntinolfi/Front-end-app.git
