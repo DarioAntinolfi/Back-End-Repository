@@ -25,9 +25,9 @@ public class GameRunner implements CommandLineRunner {
     public GiocatoriService giocatoriService;
     @Override
     public void run(String... args) throws Exception {
-        Personaggi trovato = personaggiService.findById(12);
+        Personaggi trovato = personaggiService.findById(7);
         log.info(trovato.toString());
-        trovato.setImmagine("https://res.cloudinary.com/dngnhhzso/image/upload/v1703168443/Capstone/photo_6033111531463490874_y_fqlrgl_Square_jbvjxe.jpg");
+        trovato.setImmagine("https://res.cloudinary.com/dngnhhzso/image/upload/v1703167550/Capstone/photo_6033111531463490882_y_yjlxue_Square_rsetmj.jpg");
         personaggiService.save(trovato);
     }
 }
